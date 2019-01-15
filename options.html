@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" media="screen" href="options.css" />
+    <meta charset="utf-8">
+  </head>
+
+<body>
+  
+  <div class="title"><h3> Search Layout Settings</h3></div>
+  
+  <form class="form">
+    <p class="info"> How would like to see the search results?</p>
+    <p class="result"></p>
+
+      <label class="container">Parallel | Open in new tabs
+        <input type="radio" name="tab_style" id="id_new" value="new">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Split | Open in current tab
+        <input type="radio" name="tab_style" id="id_split" value="split">
+        <span class="checkmark"></span>
+      </label> 
+      <button class="save" type="submit">Save</button>
+  </form>
+  <div class="notes">
+      <ul>
+        <li> In the "Split" mode, it is recommended to open search results in a new tab.</li>
+      </ul>
+    </div>
+  <script src="options.js"></script>
+</body>
+
+</html>

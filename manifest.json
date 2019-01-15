@@ -1,0 +1,36 @@
+{
+  "name": "Split Search",
+  "description": "Type 'ss' space your search term in the address bar and open results simultaneously on 'Google' & 'Carrot'(a meta search eng)",
+  "version": "1.2",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "omnibox": { "keyword" : "ss" },
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": {
+      "16": "./icons/Icon-16.png",
+      "32": "./icons/Icon-32.png",
+      "48": "./icons/Icon-48.png"
+      }
+  },
+  "icons": {
+    "16": "./icons/Icon-16.png",
+    "32": "./icons/Icon-32.png",
+    "48": "./icons/Icon-48.png",
+    "128": "./icons/Icon-128.png"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true
+},
+
+"permissions": ["storage"],
+"applications": {
+    "gecko": {
+        "id": "split-search@denariaEmotions.org",
+        "strict_min_version": "57.0a1"
+    }
+}
+}
